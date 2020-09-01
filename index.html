@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Q2 LMCTF STATS</title>
+</head>
+<body>
+    <div class="welcome">
+        <h1>Welcome to the LMCTF 6.1 Stats API</h1>
+    </div>
+    <div class="api">
+        <div class="allplayers">
+            <span>Show all player info: </span>
+            <span>/api/players</span>
+            <div class="example">
+                <a href="http://play.quakeagain.com/api/players">(example - All Player Info)</a>
+            </div>
+        </div><br>
+        <div class="playerid">
+            <span>Select player by ID: </span>
+            <span>/api/player/id/-player id#-</span>
+            <div class="example">
+                <a href="http://play.quakeagain.com/api/player/id/3">(example - Player ID: 3)</a>
+            </div>           
+        </div><br>
+        <div class="playername">
+            <span>Select player by name:</span>
+            <span>/api/player/name/-player name-</span>
+            <div class="example">
+                <a href="http://play.quakeagain.com/api/player/name/BuzzTest01">(example - Player Name: BuzzTest01)</a>
+            </div>
+        </div><br>
+        <div class="leaderboard">
+            <span>Select top X players by stat:</span>
+            <span>/api/leaderboard/-stat-/-top x-</span>
+            <div class="example">
+                <a href="http://play.quakeagain.com/api/leaderboard/score/10">(example - Top 10 by Score)</a>
+            </div>
+        </div><br>
+        <div class="xpery">
+            <span>Select top X players by calculated percentage:</span>
+            <span>/api/xpery/-stat numerator-/-stat denominator-/-top x-</span>
+            <div class="example">
+                <a href="http://play.quakeagain.com/api/xpery/rail_hit/rail_shot/5">(example - Top 5 Rail Accuracy)</a>
+            </div>
+        </div><br>
+        <div class="tablefields">
+            <div class="tableheaders">
+                <div class="th_colname">
+                    Column Name
+                </div>
+                <div class="th_coldesc">
+                    Column Description
+                </div>
+                <div class="th_colactive">
+                    Implemented? (Y/N)
+                </div>
+            </div>
+            <div class="tabledata">
+                <div class="td_coldata">
+                    <span>shots</span>
+                    <span>shots_hit</span>
+                    <span>score</span>
+                    <span>frags</span>
+                    <span>deaths</span>
+                    <span>def_base</span>
+                    <span>def_flag</span>
+                    <span>def_carrier</span>
+                    <span>flag_pickups</span>
+                    <span>flag_drops</span>
+                    <span>flag_captures</span>
+                    <span>flag_kills</span>
+                    <span>flag_returns</span>
+                    <span>assists</span>
+                    <span>rail_shot</span>
+                    <span>rail_hit</span>
+                    <span>rail_kill</span>
+                    <span>rune_strength</span>
+                    <span>rune_haste</span>
+                    <span>rune_resist</span>
+                    <span>rune_regen</span>
+                    <span>item_quad</span>
+                    <span>item_shield</span>
+                    <span>item_armor</span>
+                    <span>item_mega</span>
+                    <span>damage_out</span>
+                    <span>damage_in</span>
+                    <span>mvp_off</span>
+                    <span>mvp_def</span>
+                </div>
+                <div class="td_coldesc">
+                    <span>Total Shots Taken</span>
+                    <span>Shots on Target</span>
+                    <span>Score</span>
+                    <span>Frags</span>
+                    <span>Deaths</span>
+                    <span>Defend Base</span>
+                    <span>Defend Flag</span>
+                    <span>Defend Flag Carrier</span>
+                    <span>Flag Pickups</span>
+                    <span>Flag Drops</span>
+                    <span>Captures</span>
+                    <span>Flag Carrier Kills</span>
+                    <span>Flag Returns</span>
+                    <span>Assists</span>
+                    <span>Railgun Shots</span>
+                    <span>Railgun Hits</span>
+                    <span>Railgun Kills</span>
+                    <span>Pickups: Strength Rune</span>
+                    <span>Pickups: Haste Rune</span>
+                    <span>Pickups: Resist Rune</span>
+                    <span>Pickups: Regen Rune</span>
+                    <span>Pickups: Quad Damage</span>
+                    <span>Pickups: Power Shield</span>
+                    <span>Pickups: Red Armor</span>
+                    <span>Pickups: Mega Health</span>
+                    <span>Damage Dealt</span>
+                    <span>Damage Received</span>
+                    <span>Offensive MVP</span>
+                    <span>Defensive MVP</span>
+                </div>
+                <div class="td_colactive">
+                    <span>N</span>
+                    <span>N</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                    <span>N</span>
+                    <span>N</span>
+                    <span>Y</span>
+                    <span>Y</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: #333;
+            color: #ececec;
+            font-family: "Poppins", sans-serif;
+        }
+        a {
+            color: #ececec;
+        }
+        .tableheaders {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+        }
+        .tabledata {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+        }
+        .tabledata span {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    </style>
+</body>
+</html>
